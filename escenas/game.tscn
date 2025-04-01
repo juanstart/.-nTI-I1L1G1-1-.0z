@@ -1,0 +1,217 @@
+[gd_scene load_steps=16 format=3 uid="uid://choh574jf1bdk"]
+
+[ext_resource type="Script" uid="uid://3tkq7mh21a6j" path="res://escenas/game.gd" id="1_p8hra"]
+[ext_resource type="PackedScene" uid="uid://cxchib5obxylo" path="res://escenas/enemybase.tscn" id="1_smvyv"]
+[ext_resource type="NavigationPolygon" uid="uid://ba2ttd8ao1onh" path="res://recours/LvNavegation.tres" id="2_6qgwm"]
+[ext_resource type="PackedScene" uid="uid://c6ox1ujukyd0o" path="res://escenas/MEta.tscn" id="2_62eqe"]
+
+[sub_resource type="QuadMesh" id="QuadMesh_6qgwm"]
+
+[sub_resource type="Gradient" id="Gradient_p8hra"]
+colors = PackedColorArray(0.2622, 0.69, 0.34063, 1, 0.38, 1, 0.411, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_6kmlf"]
+gradient = SubResource("Gradient_p8hra")
+
+[sub_resource type="QuadMesh" id="QuadMesh_p8hra"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_6qgwm"]
+font_size = 20
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_p8hra"]
+size = Vector2(48, 660)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_6kmlf"]
+size = Vector2(341, 69)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_sa5h6"]
+size = Vector2(169, 326.5)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3lvuv"]
+size = Vector2(148, 549)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_fd5rt"]
+size = Vector2(267, 124)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_t1yb8"]
+size = Vector2(119, 550)
+
+[node name="Game" type="Node"]
+script = ExtResource("1_p8hra")
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="."]
+position = Vector2(574.75, 323.75)
+scale = Vector2(1150.5, 648.5)
+mesh = SubResource("QuadMesh_6qgwm")
+texture = SubResource("GradientTexture1D_6kmlf")
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="MeshInstance2D"]
+position = Vector2(-0.345719, -0.439476)
+scale = Vector2(0.245111, 0.121049)
+mesh = SubResource("QuadMesh_p8hra")
+
+[node name="MeshInstance2D2" type="MeshInstance2D" parent="MeshInstance2D"]
+position = Vector2(-0.348761, -0.26754)
+scale = Vector2(0.0738809, 0.464919)
+mesh = SubResource("QuadMesh_p8hra")
+
+[node name="MeshInstance2D3" type="MeshInstance2D" parent="MeshInstance2D"]
+position = Vector2(-0.256628, -0.0813416)
+scale = Vector2(0.258149, 0.0925212)
+mesh = SubResource("QuadMesh_p8hra")
+
+[node name="MeshInstance2D4" type="MeshInstance2D" parent="MeshInstance2D"]
+position = Vector2(-0.16319, 0.00886658)
+scale = Vector2(0.0712733, 0.272938)
+mesh = SubResource("QuadMesh_p8hra")
+
+[node name="MeshInstance2D5" type="MeshInstance2D" parent="MeshInstance2D"]
+position = Vector2(-0.240982, 0.106785)
+scale = Vector2(0.226858, 0.0771009)
+mesh = SubResource("QuadMesh_p8hra")
+
+[node name="MeshInstance2D6" type="MeshInstance2D" parent="MeshInstance2D"]
+position = Vector2(-0.322251, 0.257903)
+scale = Vector2(0.0643199, 0.379337)
+mesh = SubResource("QuadMesh_p8hra")
+
+[node name="MeshInstance2D7" type="MeshInstance2D" parent="MeshInstance2D"]
+position = Vector2(-0.149283, 0.395914)
+scale = Vector2(0.410256, 0.103315)
+mesh = SubResource("QuadMesh_p8hra")
+
+[node name="MeshInstance2D8" type="MeshInstance2D" parent="MeshInstance2D"]
+position = Vector2(0.0319426, 0.0582112)
+scale = Vector2(0.0495436, 0.77872)
+mesh = SubResource("QuadMesh_p8hra")
+
+[node name="MeshInstance2D9" type="MeshInstance2D" parent="MeshInstance2D"]
+position = Vector2(0.0827901, -0.284117)
+scale = Vector2(0.151239, 0.0940632)
+mesh = SubResource("QuadMesh_p8hra")
+
+[node name="MeshInstance2D10" type="MeshInstance2D" parent="MeshInstance2D"]
+position = Vector2(0.13103, -0.0767155)
+scale = Vector2(0.0547588, 0.508867)
+mesh = SubResource("QuadMesh_p8hra")
+
+[node name="MeshInstance2D11" type="MeshInstance2D" parent="MeshInstance2D"]
+position = Vector2(0.198392, 0.128373)
+scale = Vector2(0.189483, 0.0986893)
+mesh = SubResource("QuadMesh_p8hra")
+
+[node name="MeshInstance2D12" type="MeshInstance2D" parent="MeshInstance2D"]
+position = Vector2(0.268362, 0.24788)
+scale = Vector2(0.0495437, 0.337702)
+mesh = SubResource("QuadMesh_p8hra")
+
+[node name="MeshInstance2D13" type="MeshInstance2D" parent="MeshInstance2D"]
+position = Vector2(0.34007, 0.381264)
+scale = Vector2(0.19296, 0.0709329)
+mesh = SubResource("QuadMesh_p8hra")
+
+[node name="MeshInstance2D14" type="MeshInstance2D" parent="MeshInstance2D"]
+position = Vector2(0.415254, 0.0134926)
+scale = Vector2(0.0425901, 0.806477)
+mesh = SubResource("QuadMesh_p8hra")
+
+[node name="MeshInstance2D15" type="MeshInstance2D" parent="MeshInstance2D"]
+position = Vector2(0.507388, -0.344256)
+scale = Vector2(0.226858, 0.0909793)
+mesh = SubResource("QuadMesh_p8hra")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+limit_left = 0
+limit_top = 0
+
+[node name="Enemys" type="Node2D" parent="."]
+
+[node name="CharacterBody2D" parent="Enemys" instance=ExtResource("1_smvyv")]
+position = Vector2(1217, 101)
+scale = Vector2(2, 2)
+speed = 100.0
+
+[node name="NavigationRegion2D" type="NavigationRegion2D" parent="Enemys"]
+navigation_polygon = ExtResource("2_6qgwm")
+
+[node name="Area2D(Meta)" parent="." instance=ExtResource("2_62eqe")]
+position = Vector2(172, 28)
+
+[node name="UI" type="Control" parent="."]
+visible = false
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Panel" type="Panel" parent="UI"]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -358.0
+offset_bottom = 67.0
+grow_horizontal = 0
+
+[node name="SLabel" type="Label" parent="UI/Panel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Score: 0"
+label_settings = SubResource("LabelSettings_6qgwm")
+
+[node name="CoinsLabel" type="Label" parent="UI/Panel"]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_top = -28.0
+offset_right = 76.0
+grow_vertical = 0
+text = "Coins: 0"
+label_settings = SubResource("LabelSettings_6qgwm")
+
+[node name="Points" type="Node2D" parent="."]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(14, 320)
+shape = SubResource("RectangleShape2D_p8hra")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(174.5, 334.5)
+shape = SubResource("RectangleShape2D_6kmlf")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(83.5, 487.75)
+shape = SubResource("RectangleShape2D_sa5h6")
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(45, 238)
+shape = SubResource("RectangleShape2D_sa5h6")
+
+[node name="CollisionShape2D5" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(503, 265.5)
+shape = SubResource("RectangleShape2D_3lvuv")
+
+[node name="CollisionShape2D9" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(375.5, 483)
+shape = SubResource("RectangleShape2D_fd5rt")
+
+[node name="CollisionShape2D7" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(833, 100)
+shape = SubResource("RectangleShape2D_3lvuv")
+
+[node name="CollisionShape2D6" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(968.5, 271)
+shape = SubResource("RectangleShape2D_t1yb8")
+
+[node name="CollisionShape2D8" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(1139, 403)
+shape = SubResource("RectangleShape2D_t1yb8")

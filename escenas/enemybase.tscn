@@ -1,0 +1,26 @@
+[gd_scene load_steps=6 format=3 uid="uid://cxchib5obxylo"]
+
+[ext_resource type="Script" uid="uid://dsxdck8d44b8" path="res://escenas/scripts/enemybase.gd" id="1_mui7r"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_b72ma"]
+
+[sub_resource type="QuadMesh" id="QuadMesh_mui7r"]
+
+[sub_resource type="Gradient" id="Gradient_lsf2u"]
+colors = PackedColorArray(0.51, 0.1989, 0.1989, 1, 1, 0.39, 0.39, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_stymk"]
+gradient = SubResource("Gradient_lsf2u")
+
+[node name="CharacterBody2D" type="CharacterBody2D"]
+script = ExtResource("1_mui7r")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_b72ma")
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="."]
+scale = Vector2(18, 18)
+mesh = SubResource("QuadMesh_mui7r")
+texture = SubResource("GradientTexture1D_stymk")
+
+[node name="NavigationAgent2D" type="NavigationAgent2D" parent="."]
